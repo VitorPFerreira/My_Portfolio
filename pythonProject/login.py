@@ -18,16 +18,16 @@ def submitact():
 
 def logintodb(user, passw):
     if passw:
-        db = mysql.connector.connect(host='localhost',
-                                     user='root',
-                                     password='01020304',
-                                     database='autopecasbd', )
+        db = mysql.connector.connect(#host='',
+                                     #user='',
+                                     #password='',
+                                     #database='', )
         cursor = db.cursor()
 
     else:
-        db = mysql.connector.connect(host="localhost",
-                                     user='user',
-                                     database='autopecasbd')
+        db = mysql.connector.connect(#host="",
+                                     #user='',
+                                     #database='')
         cursor = db.cursor()
     savequery = mostrar()
     try:
