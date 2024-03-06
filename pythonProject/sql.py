@@ -1,11 +1,6 @@
 import mysql.connector
 
 conexao = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='01020304',
-    database='autopecasbd',
-)
 cur = conexao.cursor()
 # CRUD
 
